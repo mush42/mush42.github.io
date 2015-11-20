@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mushy TalkBack - A jazzier android screen reading experience</title>
+  <meta name="description" content="TalkBack, Accessibility, Android, Sounds, SR, MushyTalkback">
+  <meta name="author" content="Musharraf Omer">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+<section class="jumbotron">
+  <header role="banner">
+    <h1>Mushy TalkBack</h1>
+  </header>
+  <main>
+    <h2>What is this?</h2>
+    <p>Mushy TalkBack is an independent clone of Google's TalkBack version 4.3. Since a lot of folks, including me, are not happy with the default metallic sound scheme which comes built-in into the talkback, and since there is no way to change  those sounds without rebuilding TalkBack from its source code and creating a wholly separate app, I decided to take a step forward ant do it. This is the result of a pretty trivial effort, A TalkBack with a new and better sound scheme. Because blind folks deserve the best, Google!</p>
+    <h2>How I can use this thing?</h2>
+    <p>Deadly easy. To use Mushy Talkback follow these steps:</p>
+    <ol class="list-group">
+      <li class="list-group-item">
+      <p class="list-group-item-heading">1. Download and Install the apk file from the button below:</p>
+      <a href="./com.musharraf.mushyTalkBack.apk" class="btn btn-lg btn-info" role="button">Download The APK File</a>
+      </li>
+      <li class="list-group-item"><p>2. Go To settings then accessibility and Turn off TalkBack</p></li>
+      <li class="list-group-item"><p>3. Back to accessibility settings, under the Services section you will find a new service called Mushy TalkBack, Turn This on.</p></li>
+      <li class="list-group-item"><p>4. Since this is a separate app, if you want to tweak  your screen reader settings, you need to do that from the same screen from which you activated Mushy TalkBack, or from the Global Context Menu.</p></li>
+      <li class="list-group-item"><p>5. After that you can use the app normally as you do with TalkBack, in fact there is no any difference except the sounds.</p></li>
+    </ol>
+    <h2>Who is behind this?</h2>
+    <p>This app is provided to you by: <a href="https://twitter.com/mush42/">Musharraf Omer</a>.</p>
+    <p>If you find this app useful in any way, please consider sending me a google play card as a thank you, I need that to buy some HQ voices for my phone, and I will remove this notice when ever I reach the amount required to buy those voices.</p>
+    <p>For any suggestions or just to say hello, contact me at <a href="https://twitter.com/mush42">Twitter</a> or via email: <a href="mailto:ibnomer2011@hotmail.com">ibnomer2011@hotmail.com</a>.</p>
+    <h2>What is next?</h2>
+    <p>I'm ambitious about this project. Since Google published the source code of TalkBack on github, I decided to tinker with the code a little bit, particularly I have two distinct goals:</p>
+    <ol class="list-group">
+      <li class="list-group-item"><p>1. Change the default, screwy sound scheme. I Think this is done for now.</p></p></li>
+      <li class="list-group-item"><p>2. Add some global multi-touch gestures like those found on Samsung's galaxy TalkBack. But I realized that this is impossible, and here is why:</p>
+      <p>The global gestures, i.e. the gestures performed by the user regardless of the current app she is working on. can not be captured by individual apps due to security and privacy reasons, unless you capture them via the built-in accessibility service, which is a part of android's core. Now the thing is here, this Accessibility Service only supports L-shape gestures like those found on the vanilla TalkBack, and does not support multi-touch gestures, such as 3-finger tab etc...</p>
+      <p>Unfortunately, as far as I know, there is no way to bypass this, unless you build a custom version of android OS, something that OEM like Samsung have access to.</p>
+      <p>All in all, there are some affordable alternatives, one of them is to create a TalkBack Utility Panel, the user can open this panel by swiping down for example, then this panel will be opened and it will listen to multi-touch gestures and act accordingly, say by announcing the current time, battery level, network status,  weather briefing, or changing granularity.</p>
+      </li>
+    </ol>
+    <h2>Contribution Needed</h2>
+    <p>If you think you have access to a better sound scheme, please do share it with the rest of us, if I find it useful, I promise to include it in the next release of the app.</p>
+  </main>
+  <footer role="contentinfo">
+    <p><strong>Copyright © 2015 Musharraf Omer.</strong></p>
+  </footer>
+</section>
+</div>
+</body>
+</html>
